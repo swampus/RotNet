@@ -1,0 +1,113 @@
+# ============================================================
+# Python
+# ============================================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+*.so
+*.pyd
+
+# ============================================================
+# Virtual environments
+# ============================================================
+
+.venv/
+venv/
+env/
+ENV/
+
+# ============================================================
+# IDE
+# ============================================================
+
+.idea/
+.vscode/
+
+*.iml
+
+# ============================================================
+# Pytest / coverage / caches
+# ============================================================
+
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+.mypy_cache/
+.ruff_cache/
+
+.phase2-tests-*/
+.phase2-tests-baseline/
+.phase2-tests-final/
+.phase2-tests-first/
+.phase2-tests-postprocess/
+.phase2-tests-reproduction/
+
+# ============================================================
+# Datasets
+# Do not commit MNIST / Fashion-MNIST binaries
+# ============================================================
+
+data/
+
+# ============================================================
+# OS junk
+# ============================================================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ============================================================
+# Logs / temporary files
+# ============================================================
+
+*.log
+*.tmp
+*.temp
+*.bak
+
+# ============================================================
+# Model checkpoints
+# ============================================================
+
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# ============================================================
+# Large experiment artifacts
+# ============================================================
+
+# Per-sample prediction dumps can become large.
+results/**/predictions.csv
+
+# Resolved local environments are not important for Git.
+results/**/requirements-resolved.txt
+
+# Error logs from interrupted runs.
+results/**/error.log
+
+# ============================================================
+# Keep research results
+# ============================================================
+#
+# IMPORTANT:
+# We intentionally DO NOT ignore results/ entirely.
+#
+# Small reproducibility artifacts should remain versioned:
+#
+#   metrics.json
+#   suite.json
+#   config.json
+#   environment.json
+#   source_hashes.json
+#   RESULTS.md
+#   *.png
+#
+# This makes the GitHub repository useful as a research record
+# without committing datasets or neural-network checkpoints.

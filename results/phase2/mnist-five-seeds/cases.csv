@@ -1,0 +1,191 @@
+dataset,family,seed,model,stages,variant,representation,status,test_accuracy,core_trainable_parameters,core_ops,whole_ops,training_seconds,batch256_ms,batch1_ms,path,error
+mnist,replication,42,dense,8,learned,28x28,completed,0.9639,65792,131072,537600,11.846580500001437,0.007147600001189858,0.1550215000024764,cases/mnist__replication__42__dense__8__learned/attempt001,
+mnist,replication,42,low-rank,8,learned,28x28,completed,0.9677,16640,32736,439264,11.445985999991535,0.005791999996290542,0.17233000000123866,cases/mnist__replication__42__low-rank__8__learned/attempt001,
+mnist,replication,42,rotation,8,learned,28x28,completed,0.9674,5120,10240,416768,36.40966410000692,0.02405989999533631,1.1152273000043351,cases/mnist__replication__42__rotation__8__learned/attempt001,
+mnist,replication,42,adaptive-rotation,8,learned,28x28,completed,0.9676,5120,1886.208,410839.04,40.00132599999779,0.018836899995221756,0.5785691000055522,cases/mnist__replication__42__adaptive-rotation__8__learned/attempt001,
+mnist,replication,43,dense,8,learned,28x28,completed,0.9784,65792,131072,537600,12.353678899991792,0.006834900006651878,0.15767689999483991,cases/mnist__replication__43__dense__8__learned/attempt001,
+mnist,replication,43,low-rank,8,learned,28x28,completed,0.9682,16640,32736,439264,11.558182799999486,0.00625170000421349,0.16864699999860022,cases/mnist__replication__43__low-rank__8__learned/attempt001,
+mnist,replication,43,rotation,8,learned,28x28,completed,0.9638,5120,10240,416768,37.13161700000637,0.02416490000905469,1.1228166999935638,cases/mnist__replication__43__rotation__8__learned/attempt001,
+mnist,replication,43,adaptive-rotation,8,learned,28x28,completed,0.9666,5120,1901.952,410917.76,39.970616799997515,0.018967399999382906,0.5934303999965778,cases/mnist__replication__43__adaptive-rotation__8__learned/attempt001,
+mnist,replication,44,dense,8,learned,28x28,completed,0.9723,65792,131072,537600,12.450307600011001,0.006630499992752448,0.15665960000478663,cases/mnist__replication__44__dense__8__learned/attempt001,
+mnist,replication,44,low-rank,8,learned,28x28,completed,0.9735,16640,32736,439264,11.314418499998283,0.006068200003937818,0.16280240000924096,cases/mnist__replication__44__low-rank__8__learned/attempt001,
+mnist,replication,44,rotation,8,learned,28x28,completed,0.9703,5120,10240,416768,36.421750099994824,0.023932099997182377,1.096898500007228,cases/mnist__replication__44__rotation__8__learned/attempt001,
+mnist,replication,44,adaptive-rotation,8,learned,28x28,completed,0.9689,5120,1879.808,410807.04000000004,39.12494059999881,0.017977299998165108,0.5805976000119699,cases/mnist__replication__44__adaptive-rotation__8__learned/attempt001,
+mnist,replication,45,dense,8,learned,28x28,completed,0.9743,65792,131072,537600,12.130927399994107,0.006876400002511218,0.15606470000057016,cases/mnist__replication__45__dense__8__learned/attempt001,
+mnist,replication,45,low-rank,8,learned,28x28,completed,0.9717,16640,32736,439264,11.408541500000865,0.005972500002826564,0.16654130000097211,cases/mnist__replication__45__low-rank__8__learned/attempt001,
+mnist,replication,45,rotation,8,learned,28x28,completed,0.971,5120,10240,416768,36.46021579999069,0.023487099999329075,1.1113626000005752,cases/mnist__replication__45__rotation__8__learned/attempt001,
+mnist,replication,45,adaptive-rotation,8,learned,28x28,completed,0.9698,5120,1852.0320000000002,410668.16000000003,39.12299990000611,0.018561100005172193,0.5670046000013826,cases/mnist__replication__45__adaptive-rotation__8__learned/attempt002,
+mnist,replication,46,dense,8,learned,28x28,completed,0.9732,65792,131072,537600,12.099295500011067,0.006786800004192628,0.15580179999233223,cases/mnist__replication__46__dense__8__learned/attempt001,
+mnist,replication,46,low-rank,8,learned,28x28,completed,0.969,16640,32736,439264,11.339106300001731,0.005846100000781007,0.16569130000425503,cases/mnist__replication__46__low-rank__8__learned/attempt001,
+mnist,replication,46,rotation,8,learned,28x28,completed,0.9703,5120,10240,416768,36.377544399991166,0.024032100001932122,1.1118474999966566,cases/mnist__replication__46__rotation__8__learned/attempt001,
+mnist,replication,46,adaptive-rotation,8,learned,28x28,completed,0.9688,5120,1891.84,410867.2,39.25222710000526,0.018258700001752004,0.5840915000007953,cases/mnist__replication__46__adaptive-rotation__8__learned/attempt001,
+mnist,stages,42,rotation,1,learned,28x28,completed,0.9685,640,1280,407808,12.067230300002848,0.006711499998345971,0.2402635000034934,cases/mnist__stages__42__rotation__1__learned/attempt001,
+mnist,stages,42,rotation,2,learned,28x28,completed,0.9708,1280,2560,409088,18.32761809999647,0.0127892000018619,0.3744810999924084,cases/mnist__stages__42__rotation__2__learned/attempt001,
+mnist,stages,42,rotation,4,learned,28x28,completed,0.9681,2560,5120,411648,26.574181999996654,0.01885690000199247,0.6148753000015859,cases/mnist__stages__42__rotation__4__learned/attempt001,
+mnist,stages,43,rotation,1,learned,28x28,completed,0.9681,640,1280,407808,12.222283099996275,0.006544399991980754,0.23667399999976624,cases/mnist__stages__43__rotation__1__learned/attempt001,
+mnist,stages,43,rotation,2,learned,28x28,completed,0.9709,1280,2560,409088,18.36171789999935,0.012291500010178424,0.3688752000016393,cases/mnist__stages__43__rotation__2__learned/attempt001,
+mnist,stages,43,rotation,4,learned,28x28,completed,0.9708,2560,5120,411648,26.507465100003174,0.01856289998977445,0.6219406000018353,cases/mnist__stages__43__rotation__4__learned/attempt001,
+mnist,stages,44,rotation,1,learned,28x28,completed,0.9708,640,1280,407808,11.936951600000612,0.006268899989663623,0.23910269999760203,cases/mnist__stages__44__rotation__1__learned/attempt001,
+mnist,stages,44,rotation,2,learned,28x28,completed,0.971,1280,2560,409088,18.29802230000496,0.012357200001133606,0.36595540000416804,cases/mnist__stages__44__rotation__2__learned/attempt001,
+mnist,stages,44,rotation,4,learned,28x28,completed,0.9683,2560,5120,411648,26.533646900003077,0.018866599988541566,0.614341799999238,cases/mnist__stages__44__rotation__4__learned/attempt001,
+mnist,stages,45,rotation,1,learned,28x28,completed,0.9699,640,1280,407808,12.10441770000034,0.006354600001941435,0.23737589998927433,cases/mnist__stages__45__rotation__1__learned/attempt001,
+mnist,stages,45,rotation,2,learned,28x28,completed,0.9685,1280,2560,409088,18.40612100000726,0.012134799995692447,0.36631199999828823,cases/mnist__stages__45__rotation__2__learned/attempt001,
+mnist,stages,45,rotation,4,learned,28x28,completed,0.9651,2560,5120,411648,26.449581699998816,0.018745399996987544,0.6164232000010088,cases/mnist__stages__45__rotation__4__learned/attempt001,
+mnist,stages,46,rotation,1,learned,28x28,completed,0.9722,640,1280,407808,12.128162300010445,0.0063879999943310395,0.2421504000085406,cases/mnist__stages__46__rotation__1__learned/attempt001,
+mnist,stages,46,rotation,2,learned,28x28,completed,0.9736,1280,2560,409088,18.459654699996463,0.012602000002516434,0.3691974000103073,cases/mnist__stages__46__rotation__2__learned/attempt001,
+mnist,stages,46,rotation,4,learned,28x28,completed,0.977,2560,5120,411648,26.59776070000953,0.01846740000473801,0.6101855000015348,cases/mnist__stages__46__rotation__4__learned/attempt001,
+mnist,components,42,rotation,8,identity,28x28,completed,0.9681,4096,10240,416768,30.001664499999606,0.024387199999182485,1.1082980999926804,cases/mnist__components__42__rotation__8__identity/attempt001,
+mnist,components,42,rotation,8,random-fixed,28x28,completed,0.9746,4096,10240,416768,29.973837300000014,0.024374300002818927,1.1005159000051208,cases/mnist__components__42__rotation__8__random-fixed/attempt001,
+mnist,components,42,rotation,8,final-gelu,28x28,completed,0.9648,5120,10240,416768,33.48229569999967,0.020835599993006326,0.8815885999938473,cases/mnist__components__42__rotation__8__final-gelu/attempt001,
+mnist,components,42,rotation,8,coordinate-only,28x28,completed,0.9681,4096,4096,410624,18.010227299993858,0.008665600005770102,0.45248380000703037,cases/mnist__components__42__rotation__8__coordinate-only/attempt001,
+mnist,components,42,rotation,8,no-affine,28x28,completed,0.9723,1024,6144,412672,31.217258900011075,0.02205070000491105,1.0040262999973493,cases/mnist__components__42__rotation__8__no-affine/attempt001,
+mnist,components,42,projection-only,8,learned,28x28,completed,0.9705,0,0,406528,9.475483500005794,0.004899799998383969,0.10340419999556616,cases/mnist__components__42__projection-only__8__learned/attempt001,
+mnist,components,43,rotation,8,identity,28x28,completed,0.9647,4096,10240,416768,30.255096900000353,0.024053999994066544,1.1106335999938892,cases/mnist__components__43__rotation__8__identity/attempt001,
+mnist,components,43,rotation,8,random-fixed,28x28,completed,0.9653,4096,10240,416768,30.875853399993503,0.023679099991568364,1.114164200000232,cases/mnist__components__43__rotation__8__random-fixed/attempt001,
+mnist,components,43,rotation,8,final-gelu,28x28,completed,0.9676,5120,10240,416768,33.947073999996064,0.021125100000062957,0.8913157000060892,cases/mnist__components__43__rotation__8__final-gelu/attempt001,
+mnist,components,43,rotation,8,coordinate-only,28x28,completed,0.9647,4096,4096,410624,17.838453799995477,0.009836899989750236,0.45204519999970216,cases/mnist__components__43__rotation__8__coordinate-only/attempt001,
+mnist,components,43,rotation,8,no-affine,28x28,completed,0.9676,1024,6144,412672,31.253174800003762,0.022029600004316308,1.0220124999905238,cases/mnist__components__43__rotation__8__no-affine/attempt001,
+mnist,components,43,projection-only,8,learned,28x28,completed,0.9693,0,0,406528,9.4756100000086,0.004787300000316463,0.10604759999841917,cases/mnist__components__43__projection-only__8__learned/attempt001,
+mnist,components,44,rotation,8,identity,28x28,completed,0.9611,4096,10240,416768,29.99968340000487,0.023163799996837042,1.1011293999908958,cases/mnist__components__44__rotation__8__identity/attempt001,
+mnist,components,44,rotation,8,random-fixed,28x28,completed,0.968,4096,10240,416768,30.106621599989012,0.023689699999522418,1.1041983999894,cases/mnist__components__44__rotation__8__random-fixed/attempt001,
+mnist,components,44,rotation,8,final-gelu,28x28,completed,0.9711,5120,10240,416768,33.40792740001052,0.021117400014190935,0.8816113000066252,cases/mnist__components__44__rotation__8__final-gelu/attempt001,
+mnist,components,44,rotation,8,coordinate-only,28x28,completed,0.9611,4096,4096,410624,17.71894199999224,0.008693900002981536,0.4601932000077795,cases/mnist__components__44__rotation__8__coordinate-only/attempt001,
+mnist,components,44,rotation,8,no-affine,28x28,completed,0.974,1024,6144,412672,30.999735000004875,0.021105899999383837,1.0157994000037434,cases/mnist__components__44__rotation__8__no-affine/attempt001,
+mnist,components,44,projection-only,8,learned,28x28,completed,0.97,0,0,406528,9.816761100009899,0.005149399992660619,0.10636720000184141,cases/mnist__components__44__projection-only__8__learned/attempt001,
+mnist,components,45,rotation,8,identity,28x28,completed,0.9656,4096,10240,416768,31.297481799992966,0.024052700013271533,1.131058300001314,cases/mnist__components__45__rotation__8__identity/attempt001,
+mnist,components,45,rotation,8,random-fixed,28x28,completed,0.9665,4096,10240,416768,31.026761399989482,0.024101999995764345,1.1242500999942422,cases/mnist__components__45__rotation__8__random-fixed/attempt001,
+mnist,components,45,rotation,8,final-gelu,28x28,completed,0.9687,5120,10240,416768,34.53097479999997,0.02210469999408815,0.9084511999972165,cases/mnist__components__45__rotation__8__final-gelu/attempt001,
+mnist,components,45,rotation,8,coordinate-only,28x28,completed,0.9656,4096,4096,410624,18.403561200000695,0.009130799997365102,0.4619858999940334,cases/mnist__components__45__rotation__8__coordinate-only/attempt001,
+mnist,components,45,rotation,8,no-affine,28x28,completed,0.9698,1024,6144,412672,31.66562050000357,0.02243720000842586,1.0207793000008678,cases/mnist__components__45__rotation__8__no-affine/attempt001,
+mnist,components,45,projection-only,8,learned,28x28,completed,0.9698,0,0,406528,9.518024599994533,0.004809899997781031,0.10415140000986867,cases/mnist__components__45__projection-only__8__learned/attempt001,
+mnist,components,46,rotation,8,identity,28x28,completed,0.9671,4096,10240,416768,30.15350469999248,0.02339820000634063,1.1061088000133168,cases/mnist__components__46__rotation__8__identity/attempt001,
+mnist,components,46,rotation,8,random-fixed,28x28,completed,0.9723,4096,10240,416768,30.07659949999652,0.023980300000403076,1.1001840999961132,cases/mnist__components__46__rotation__8__random-fixed/attempt001,
+mnist,components,46,rotation,8,final-gelu,28x28,completed,0.9716,5120,10240,416768,33.49588469999435,0.020655600004829466,0.8825772999989567,cases/mnist__components__46__rotation__8__final-gelu/attempt001,
+mnist,components,46,rotation,8,coordinate-only,28x28,completed,0.9671,4096,4096,410624,17.705830200007767,0.009681699986685999,0.4459690999938175,cases/mnist__components__46__rotation__8__coordinate-only/attempt001,
+mnist,components,46,rotation,8,no-affine,28x28,completed,0.9725,1024,6144,412672,31.252728100007516,0.02247670000360813,1.0117452000122285,cases/mnist__components__46__rotation__8__no-affine/attempt001,
+mnist,components,46,projection-only,8,learned,28x28,completed,0.9751,0,0,406528,9.476785000006203,0.004940600003465079,0.1032981999887852,cases/mnist__components__46__projection-only__8__learned/attempt001,
+mnist,validation,42,adaptive-rotation,8,learned,28x28,completed,0.9683,5120,1337.6,408096.0,36.02839770000719,0.012480599994887598,0.4334355000028154,cases/mnist__validation__42__adaptive-rotation__8__learned/attempt001,
+mnist,validation,43,adaptive-rotation,8,learned,28x28,completed,0.9714,5120,1282.304,407819.52,36.144502700000885,0.007152099991799332,0.4268805000028806,cases/mnist__validation__43__adaptive-rotation__8__learned/attempt001,
+mnist,validation,44,adaptive-rotation,8,learned,28x28,completed,0.9705,5120,1280,407808,36.15779389999807,0.007071400003042072,0.4317830999934813,cases/mnist__validation__44__adaptive-rotation__8__learned/attempt001,
+mnist,validation,45,adaptive-rotation,8,learned,28x28,completed,0.963,5120,1280,407808,36.176543400011724,0.007758499996270984,0.42606850000447594,cases/mnist__validation__45__adaptive-rotation__8__learned/attempt001,
+mnist,validation,46,adaptive-rotation,8,learned,28x28,completed,0.9714,5120,1370.496,408260.48,36.187944099991,0.016131500000483356,0.46430140000302345,cases/mnist__validation__46__adaptive-rotation__8__learned/attempt001,
+mnist,direct16,42,dense,8,learned,16x16,completed,0.968,65792,131072,136192,6.834970099997008,0.002195900000515394,0.10096260000136681,cases/mnist__direct16__42__dense__8__learned/attempt001,
+mnist,direct16,42,low-rank,8,learned,16x16,completed,0.9607,16640,32736,37856,6.395236299998942,0.0012999000027775764,0.10767880000639707,cases/mnist__direct16__42__low-rank__8__learned/attempt001,
+mnist,direct16,42,rotation,8,learned,16x16,completed,0.9317,5120,10240,15360,30.513993200002005,0.018830799992429093,1.0584276000008686,cases/mnist__direct16__42__rotation__8__learned/attempt001,
+mnist,direct16,42,adaptive-rotation,8,learned,16x16,completed,0.9271,5120,3836.032,19180.16,34.26592530000198,0.01965889999701176,1.0750454000080936,cases/mnist__direct16__42__adaptive-rotation__8__learned/attempt001,
+mnist,direct16,43,dense,8,learned,16x16,completed,0.9685,65792,131072,136192,7.067924599992693,0.002282999994349666,0.1010697000019718,cases/mnist__direct16__43__dense__8__learned/attempt001,
+mnist,direct16,43,low-rank,8,learned,16x16,completed,0.9612,16640,32736,37856,6.663652600007481,0.0012701000086963177,0.112574400001904,cases/mnist__direct16__43__low-rank__8__learned/attempt001,
+mnist,direct16,43,rotation,8,learned,16x16,completed,0.9408,5120,10240,15360,31.10069310000108,0.01870770000095945,1.0490519000013592,cases/mnist__direct16__43__rotation__8__learned/attempt001,
+mnist,direct16,43,adaptive-rotation,8,learned,16x16,completed,0.9335,5120,3800.96,19004.8,34.22643480000261,0.020013000001199543,1.0584006999997655,cases/mnist__direct16__43__adaptive-rotation__8__learned/attempt001,
+mnist,direct16,44,dense,8,learned,16x16,completed,0.9684,65792,131072,136192,7.069781099999091,0.002642699997522868,0.1046937000064645,cases/mnist__direct16__44__dense__8__learned/attempt001,
+mnist,direct16,44,low-rank,8,learned,16x16,completed,0.9631,16640,32736,37856,6.476547099999152,0.0013121000083629042,0.11386319999292027,cases/mnist__direct16__44__low-rank__8__learned/attempt001,
+mnist,direct16,44,rotation,8,learned,16x16,completed,0.9359,5120,10240,15360,31.107995300000766,0.018882800010032952,1.0602681000018492,cases/mnist__direct16__44__rotation__8__learned/attempt001,
+mnist,direct16,44,adaptive-rotation,8,learned,16x16,completed,0.9349,5120,3851.3920000000003,19256.960000000003,34.14742850000039,0.02076179999858141,1.063743999999133,cases/mnist__direct16__44__adaptive-rotation__8__learned/attempt001,
+mnist,direct16,45,dense,8,learned,16x16,completed,0.9656,65792,131072,136192,7.1075796999939485,0.0027132000104757026,0.10337949999666307,cases/mnist__direct16__45__dense__8__learned/attempt001,
+mnist,direct16,45,low-rank,8,learned,16x16,completed,0.9609,16640,32736,37856,6.692654500002391,0.001304999997955747,0.11456890001136344,cases/mnist__direct16__45__low-rank__8__learned/attempt001,
+mnist,direct16,45,rotation,8,learned,16x16,completed,0.9411,5120,10240,15360,31.340118499996606,0.019165599995176308,1.0564238999941153,cases/mnist__direct16__45__rotation__8__learned/attempt001,
+mnist,direct16,45,adaptive-rotation,8,learned,16x16,completed,0.9324,5120,3834.7519999999995,19173.76,34.52836939999543,0.02028989999962505,1.0563314000028186,cases/mnist__direct16__45__adaptive-rotation__8__learned/attempt001,
+mnist,direct16,46,dense,8,learned,16x16,completed,0.97,65792,131072,136192,7.072108799999114,0.0023225000040838495,0.10168120000162162,cases/mnist__direct16__46__dense__8__learned/attempt001,
+mnist,direct16,46,low-rank,8,learned,16x16,completed,0.9591,16640,32736,37856,6.637041699999827,0.0012910999939776957,0.11178300000028685,cases/mnist__direct16__46__low-rank__8__learned/attempt001,
+mnist,direct16,46,rotation,8,learned,16x16,completed,0.9424,5120,10240,15360,30.998471900005825,0.01893700000073295,1.0373543999885442,cases/mnist__direct16__46__rotation__8__learned/attempt001,
+mnist,direct16,46,adaptive-rotation,8,learned,16x16,completed,0.9339,5120,3850.24,19251.199999999997,33.96674440000788,0.0202073999971617,1.0717003000027034,cases/mnist__direct16__46__adaptive-rotation__8__learned/attempt001,
+mnist,runtime,42,runtime,8,learned,28x28,completed,,,,,,,,cases/mnist__runtime__42__runtime__8__learned/attempt001,
+mnist,runtime,43,runtime,8,learned,28x28,completed,,,,,,,,cases/mnist__runtime__43__runtime__8__learned/attempt001,
+mnist,runtime,44,runtime,8,learned,28x28,completed,,,,,,,,cases/mnist__runtime__44__runtime__8__learned/attempt001,
+mnist,runtime,45,runtime,8,learned,28x28,completed,,,,,,,,cases/mnist__runtime__45__runtime__8__learned/attempt001,
+mnist,runtime,46,runtime,8,learned,28x28,completed,,,,,,,,cases/mnist__runtime__46__runtime__8__learned/attempt001,
+fashion-mnist,replication,42,dense,8,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,replication,42,low-rank,8,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,replication,42,rotation,8,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,replication,42,adaptive-rotation,8,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,replication,43,dense,8,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,replication,43,low-rank,8,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,replication,43,rotation,8,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,replication,43,adaptive-rotation,8,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,replication,44,dense,8,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,replication,44,low-rank,8,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,replication,44,rotation,8,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,replication,44,adaptive-rotation,8,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,replication,45,dense,8,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,replication,45,low-rank,8,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,replication,45,rotation,8,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,replication,45,adaptive-rotation,8,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,replication,46,dense,8,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,replication,46,low-rank,8,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,replication,46,rotation,8,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,replication,46,adaptive-rotation,8,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,stages,42,rotation,1,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,stages,42,rotation,2,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,stages,42,rotation,4,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,stages,43,rotation,1,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,stages,43,rotation,2,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,stages,43,rotation,4,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,stages,44,rotation,1,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,stages,44,rotation,2,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,stages,44,rotation,4,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,stages,45,rotation,1,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,stages,45,rotation,2,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,stages,45,rotation,4,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,stages,46,rotation,1,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,stages,46,rotation,2,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,stages,46,rotation,4,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,components,42,rotation,8,identity,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,components,42,rotation,8,random-fixed,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,components,42,rotation,8,final-gelu,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,components,42,rotation,8,coordinate-only,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,components,42,rotation,8,no-affine,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,components,42,projection-only,8,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,components,43,rotation,8,identity,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,components,43,rotation,8,random-fixed,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,components,43,rotation,8,final-gelu,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,components,43,rotation,8,coordinate-only,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,components,43,rotation,8,no-affine,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,components,43,projection-only,8,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,components,44,rotation,8,identity,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,components,44,rotation,8,random-fixed,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,components,44,rotation,8,final-gelu,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,components,44,rotation,8,coordinate-only,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,components,44,rotation,8,no-affine,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,components,44,projection-only,8,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,components,45,rotation,8,identity,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,components,45,rotation,8,random-fixed,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,components,45,rotation,8,final-gelu,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,components,45,rotation,8,coordinate-only,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,components,45,rotation,8,no-affine,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,components,45,projection-only,8,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,components,46,rotation,8,identity,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,components,46,rotation,8,random-fixed,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,components,46,rotation,8,final-gelu,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,components,46,rotation,8,coordinate-only,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,components,46,rotation,8,no-affine,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,components,46,projection-only,8,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,validation,42,adaptive-rotation,8,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,validation,43,adaptive-rotation,8,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,validation,44,adaptive-rotation,8,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,validation,45,adaptive-rotation,8,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,validation,46,adaptive-rotation,8,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,direct16,42,dense,8,learned,16x16,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,direct16,42,low-rank,8,learned,16x16,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,direct16,42,rotation,8,learned,16x16,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,direct16,42,adaptive-rotation,8,learned,16x16,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,direct16,43,dense,8,learned,16x16,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,direct16,43,low-rank,8,learned,16x16,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,direct16,43,rotation,8,learned,16x16,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,direct16,43,adaptive-rotation,8,learned,16x16,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,direct16,44,dense,8,learned,16x16,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,direct16,44,low-rank,8,learned,16x16,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,direct16,44,rotation,8,learned,16x16,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,direct16,44,adaptive-rotation,8,learned,16x16,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,direct16,45,dense,8,learned,16x16,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,direct16,45,low-rank,8,learned,16x16,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,direct16,45,rotation,8,learned,16x16,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,direct16,45,adaptive-rotation,8,learned,16x16,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,direct16,46,dense,8,learned,16x16,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,direct16,46,low-rank,8,learned,16x16,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,direct16,46,rotation,8,learned,16x16,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,direct16,46,adaptive-rotation,8,learned,16x16,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,runtime,42,runtime,8,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,runtime,43,runtime,8,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,runtime,44,runtime,8,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,runtime,45,runtime,8,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it
+fashion-mnist,runtime,46,runtime,8,learned,28x28,blocked,,,,,,,,,RuntimeError: Dataset not found. You can use download=True to download it

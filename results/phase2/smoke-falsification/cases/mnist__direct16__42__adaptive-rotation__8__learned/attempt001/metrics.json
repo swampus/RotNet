@@ -1,0 +1,241 @@
+{
+  "job": {
+    "dataset": "mnist",
+    "family": "direct16",
+    "seed": 42,
+    "model": "adaptive-rotation",
+    "stages": 8,
+    "variant": "learned",
+    "representation": "16x16"
+  },
+  "status": "completed",
+  "path": "cases/mnist__direct16__42__adaptive-rotation__8__learned/attempt001",
+  "started_utc": "2026-10-05T19:08:06.431492+00:00",
+  "attempt": 1,
+  "metrics": {
+    "test_accuracy": 0.046875,
+    "test_samples": 64,
+    "evaluation_wall_seconds": 0.010819799994351342,
+    "average_stages": 8,
+    "median_stages": 8.0,
+    "exit_distribution": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 64
+    },
+    "correct_samples": 3,
+    "incorrect_samples": 61,
+    "average_stages_correct": 8,
+    "average_stages_incorrect": 8,
+    "confidence_by_exit_stage": [
+      {
+        "stage": 1,
+        "samples": 0,
+        "mean_exit_confidence": null,
+        "exit_accuracy": null
+      },
+      {
+        "stage": 2,
+        "samples": 0,
+        "mean_exit_confidence": null,
+        "exit_accuracy": null
+      },
+      {
+        "stage": 3,
+        "samples": 0,
+        "mean_exit_confidence": null,
+        "exit_accuracy": null
+      },
+      {
+        "stage": 4,
+        "samples": 0,
+        "mean_exit_confidence": null,
+        "exit_accuracy": null
+      },
+      {
+        "stage": 5,
+        "samples": 0,
+        "mean_exit_confidence": null,
+        "exit_accuracy": null
+      },
+      {
+        "stage": 6,
+        "samples": 0,
+        "mean_exit_confidence": null,
+        "exit_accuracy": null
+      },
+      {
+        "stage": 7,
+        "samples": 0,
+        "mean_exit_confidence": null,
+        "exit_accuracy": null
+      },
+      {
+        "stage": 8,
+        "samples": 64,
+        "mean_exit_confidence": 0.10472113348077983,
+        "exit_accuracy": 0.046875
+      }
+    ],
+    "threshold": 0.9,
+    "training_seconds": 0.015822300003492273,
+    "history": [
+      {
+        "epoch": 1,
+        "loss": 2.3067638874053955,
+        "final_stage_train_accuracy": 0.0703125,
+        "wall_seconds": 0.015691900000092573
+      }
+    ],
+    "parameters": {
+      "trainable_parameters": 7690,
+      "total_parameters": 7690,
+      "core_trainable_parameters": 5120,
+      "core_total_parameters": 5120
+    },
+    "inference": {
+      "batched": {
+        "batch_size": 256,
+        "samples": 16,
+        "repeats": 1,
+        "warmup_batches": 2,
+        "pass_seconds": [
+          0.0033133999968413264
+        ],
+        "median_wall_seconds": 0.0033133999968413264,
+        "median_ms_per_sample": 0.2070874998025829,
+        "samples_per_second": 4828.8766871651005,
+        "threshold": 0.9,
+        "execution": "normal inference",
+        "adaptive_mean_stages_on_timed_samples": 8.0,
+        "sample_selection": "ordered test split prefix; IDs recorded in splits.json",
+        "includes": "model calls and final softmax/predictions; adaptive decisions, compaction and exit outputs",
+        "excludes": "data loading, host/device transfers, prediction export, metric aggregation"
+      },
+      "single_sample": {
+        "batch_size": 1,
+        "samples": 8,
+        "repeats": 1,
+        "warmup_batches": 2,
+        "pass_seconds": [
+          0.01991450000787154
+        ],
+        "median_wall_seconds": 0.01991450000787154,
+        "median_ms_per_sample": 2.4893125009839423,
+        "samples_per_second": 401.7173414767062,
+        "threshold": 0.9,
+        "execution": "normal inference",
+        "adaptive_mean_stages_on_timed_samples": 8.0,
+        "sample_selection": "ordered test split prefix; IDs recorded in splits.json",
+        "includes": "model calls and final softmax/predictions; adaptive decisions, compaction and exit outputs",
+        "excludes": "data loading, host/device transfers, prediction export, metric aggregation"
+      }
+    },
+    "executed_train_samples": 128,
+    "operations": {
+      "core_multiply_add_ops_per_sample": 10240,
+      "projection_multiply_add_ops_per_sample": 0,
+      "classifier_multiply_add_ops_per_sample": 40960,
+      "whole_model_multiply_add_ops_per_sample": 51200,
+      "core_gelu_coordinates_per_sample": 2048,
+      "excluded": [
+        "GELU",
+        "sin/cos",
+        "softmax",
+        "threshold decisions",
+        "memory traffic",
+        "indexing"
+      ]
+    },
+    "stage_analysis": {
+      "samples": 64,
+      "accuracy_by_stage": [
+        0.046875,
+        0.0625,
+        0.046875,
+        0.03125,
+        0.015625,
+        0.03125,
+        0.03125,
+        0.046875
+      ],
+      "stage1_correct": 3,
+      "stage1_errors": 61,
+      "stage1_errors_correct_at_final": 2,
+      "stage1_errors_ever_corrected": 3,
+      "stage1_correct_wrong_at_final": 2,
+      "stage1_correct_ever_broken": 2,
+      "transitions": [
+        {
+          "from_stage": 1,
+          "to_stage": 2,
+          "rescued": 1,
+          "damaged": 0,
+          "incorrect_to_incorrect": 60,
+          "correct_to_correct": 3,
+          "changed_prediction": 26
+        },
+        {
+          "from_stage": 2,
+          "to_stage": 3,
+          "rescued": 0,
+          "damaged": 1,
+          "incorrect_to_incorrect": 60,
+          "correct_to_correct": 3,
+          "changed_prediction": 16
+        },
+        {
+          "from_stage": 3,
+          "to_stage": 4,
+          "rescued": 0,
+          "damaged": 1,
+          "incorrect_to_incorrect": 61,
+          "correct_to_correct": 2,
+          "changed_prediction": 13
+        },
+        {
+          "from_stage": 4,
+          "to_stage": 5,
+          "rescued": 0,
+          "damaged": 1,
+          "incorrect_to_incorrect": 62,
+          "correct_to_correct": 1,
+          "changed_prediction": 10
+        },
+        {
+          "from_stage": 5,
+          "to_stage": 6,
+          "rescued": 1,
+          "damaged": 0,
+          "incorrect_to_incorrect": 62,
+          "correct_to_correct": 1,
+          "changed_prediction": 11
+        },
+        {
+          "from_stage": 6,
+          "to_stage": 7,
+          "rescued": 0,
+          "damaged": 0,
+          "incorrect_to_incorrect": 62,
+          "correct_to_correct": 2,
+          "changed_prediction": 15
+        },
+        {
+          "from_stage": 7,
+          "to_stage": 8,
+          "rescued": 2,
+          "damaged": 1,
+          "incorrect_to_incorrect": 60,
+          "correct_to_correct": 1,
+          "changed_prediction": 13
+        }
+      ]
+    }
+  },
+  "finished_utc": "2026-10-05T19:08:06.538800+00:00"
+}

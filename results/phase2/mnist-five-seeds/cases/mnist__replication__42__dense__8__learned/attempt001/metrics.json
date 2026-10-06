@@ -1,0 +1,118 @@
+{
+  "job": {
+    "dataset": "mnist",
+    "family": "replication",
+    "seed": 42,
+    "model": "dense",
+    "stages": 8,
+    "variant": "learned",
+    "representation": "28x28"
+  },
+  "status": "completed",
+  "path": "cases/mnist__replication__42__dense__8__learned/attempt001",
+  "started_utc": "2026-10-05T19:08:32.428949+00:00",
+  "attempt": 1,
+  "metrics": {
+    "test_accuracy": 0.9639,
+    "test_samples": 10000,
+    "evaluation_wall_seconds": 1.0539353999920422,
+    "training_seconds": 11.846580500001437,
+    "history": [
+      {
+        "epoch": 1,
+        "loss": 0.32721111307938894,
+        "final_stage_train_accuracy": 0.9006833333333333,
+        "wall_seconds": 1.8919623999972828
+      },
+      {
+        "epoch": 2,
+        "loss": 0.12966105057795843,
+        "final_stage_train_accuracy": 0.9603833333333334,
+        "wall_seconds": 2.441382099990733
+      },
+      {
+        "epoch": 3,
+        "loss": 0.09648224016626676,
+        "final_stage_train_accuracy": 0.9692,
+        "wall_seconds": 2.4495383000030415
+      },
+      {
+        "epoch": 4,
+        "loss": 0.07733439501126607,
+        "final_stage_train_accuracy": 0.9753666666666667,
+        "wall_seconds": 2.5210211999947205
+      },
+      {
+        "epoch": 5,
+        "loss": 0.06368348761200905,
+        "final_stage_train_accuracy": 0.9791,
+        "wall_seconds": 2.5422296000033384
+      }
+    ],
+    "parameters": {
+      "trainable_parameters": 269322,
+      "total_parameters": 269322,
+      "core_trainable_parameters": 65792,
+      "core_total_parameters": 65792
+    },
+    "inference": {
+      "batched": {
+        "batch_size": 256,
+        "samples": 1000,
+        "repeats": 3,
+        "warmup_batches": 2,
+        "pass_seconds": [
+          0.007147600001189858,
+          0.006646599998930469,
+          0.007565299994894303
+        ],
+        "median_wall_seconds": 0.007147600001189858,
+        "median_ms_per_sample": 0.007147600001189858,
+        "samples_per_second": 139907.10166119123,
+        "threshold": null,
+        "execution": "normal inference",
+        "adaptive_mean_stages_on_timed_samples": null,
+        "sample_selection": "ordered test split prefix; IDs recorded in splits.json",
+        "includes": "model calls and final softmax/predictions; adaptive decisions, compaction and exit outputs",
+        "excludes": "data loading, host/device transfers, prediction export, metric aggregation"
+      },
+      "single_sample": {
+        "batch_size": 1,
+        "samples": 1000,
+        "repeats": 3,
+        "warmup_batches": 2,
+        "pass_seconds": [
+          0.15557760000228882,
+          0.1550215000024764,
+          0.15478680000524037
+        ],
+        "median_wall_seconds": 0.1550215000024764,
+        "median_ms_per_sample": 0.1550215000024764,
+        "samples_per_second": 6450.718126092352,
+        "threshold": null,
+        "execution": "normal inference",
+        "adaptive_mean_stages_on_timed_samples": null,
+        "sample_selection": "ordered test split prefix; IDs recorded in splits.json",
+        "includes": "model calls and final softmax/predictions; adaptive decisions, compaction and exit outputs",
+        "excludes": "data loading, host/device transfers, prediction export, metric aggregation"
+      }
+    },
+    "executed_train_samples": 60000,
+    "operations": {
+      "core_multiply_add_ops_per_sample": 131072,
+      "projection_multiply_add_ops_per_sample": 401408,
+      "classifier_multiply_add_ops_per_sample": 5120,
+      "whole_model_multiply_add_ops_per_sample": 537600,
+      "core_gelu_coordinates_per_sample": 256,
+      "excluded": [
+        "GELU",
+        "sin/cos",
+        "softmax",
+        "threshold decisions",
+        "memory traffic",
+        "indexing"
+      ]
+    }
+  },
+  "finished_utc": "2026-10-05T19:08:45.994853+00:00"
+}

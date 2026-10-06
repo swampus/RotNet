@@ -1,0 +1,9 @@
+{
+  "dataset": "mnist",
+  "family": "components",
+  "seed": 44,
+  "model": "projection-only",
+  "stages": 8,
+  "variant": "learned",
+  "representation": "28x28"
+}

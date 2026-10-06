@@ -1,0 +1,9 @@
+{
+  "dataset": "mnist",
+  "family": "direct16",
+  "seed": 42,
+  "model": "dense",
+  "stages": 8,
+  "variant": "learned",
+  "representation": "16x16"
+}

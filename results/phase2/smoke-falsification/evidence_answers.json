@@ -1,0 +1,9 @@
+{
+  "1": "Across 1 paired MNIST seeds, RotationNet minus Dense accuracy averaged +1.562 pp, range +1.562 to +1.562 pp. This is descriptive consistency evidence, not a significance or noninferiority test.",
+  "2": "See the separate Fashion-MNIST five-seed table; five seeds alone do not establish broad generalization.",
+  "3": "Learned minus identity mean accuracy is -7.812 pp. Learned minus frozen-random is -1.562 pp. These controls, including coordinate-only and no-affine variants, test necessity; they do not uniquely identify a causal mechanism.",
+  "4": "Per seed, mean 3.0 stage-1 errors are correct at the final stage, while mean 8.0 stage-1 correct predictions are wrong at the final stage. Error rescue is observed; 'difficulty' is not independently measured.",
+  "5": "Validation-selected policies use mean 1.000/8 test stages. Mean test accuracy difference from the same weights' final head is +4.688 pp (range +4.688 to +4.688); mean whole-model multiply/add savings are 2.15%. A validation tolerance does not guarantee test accuracy retention.",
+  "6": "Optimized RotationNet takes 4.29\u00d7 Dense's batch=256 time on this CPU. A dense latency advantage remains.",
+  "7": "Only a targeted follow-up is justified: test whether the mixing is necessary after the input-projection control, then assess a fused structured kernel against optimized dense/low-rank baselines and include a harder dataset. The current prototype is not evidence of a practical CPU speed advantage or a general architectural benefit."
+}

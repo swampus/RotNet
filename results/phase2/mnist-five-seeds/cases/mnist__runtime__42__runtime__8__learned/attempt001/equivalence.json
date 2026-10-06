@@ -1,0 +1,20 @@
+{
+  "rotation": {
+    "status": "passed",
+    "samples_checked": 10000,
+    "max_absolute_logit_error": 0.0,
+    "atol": 1e-06,
+    "rtol": 1e-05,
+    "exit_stages_and_predictions_match_exactly": true,
+    "optimization": "cached sin/cos; adaptive reuses chosen confidence/prediction"
+  },
+  "adaptive": {
+    "status": "passed",
+    "samples_checked": 10000,
+    "max_absolute_logit_error": 0.0,
+    "atol": 1e-06,
+    "rtol": 1e-05,
+    "exit_stages_and_predictions_match_exactly": true,
+    "optimization": "cached sin/cos; adaptive reuses chosen confidence/prediction"
+  }
+}

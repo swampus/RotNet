@@ -1,0 +1,9 @@
+{
+  "dataset": "mnist",
+  "family": "direct16",
+  "seed": 46,
+  "model": "adaptive-rotation",
+  "stages": 8,
+  "variant": "learned",
+  "representation": "16x16"
+}

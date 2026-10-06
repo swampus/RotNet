@@ -1,0 +1,9 @@
+{
+  "dataset": "mnist",
+  "family": "runtime",
+  "seed": 45,
+  "model": "runtime",
+  "stages": 8,
+  "variant": "learned",
+  "representation": "28x28"
+}

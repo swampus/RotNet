@@ -1,0 +1,10 @@
+{
+  "status": "BLOCKED",
+  "dataset": "fashion-mnist",
+  "local_dataset": "Unavailable at data/FashionMNIST/raw",
+  "attempted_command": ".\\.venv\\Scripts\\python.exe -c \"from torchvision.datasets import FashionMNIST; FashionMNIST('data',train=True,download=True); FashionMNIST('data',train=False,download=True)\"",
+  "observed_error": "RuntimeError: Error downloading train-images-idx3-ubyte.gz; urlopen error [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions",
+  "source_mirror": "http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/",
+  "subsequent_action": "No further download attempts; continue all MNIST experiments. Fashion-MNIST cases are blocked and excluded from measured aggregates.",
+  "results": null
+}

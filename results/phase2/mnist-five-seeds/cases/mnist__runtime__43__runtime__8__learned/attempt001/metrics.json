@@ -1,0 +1,486 @@
+{
+  "job": {
+    "dataset": "mnist",
+    "family": "runtime",
+    "seed": 43,
+    "model": "runtime",
+    "stages": 8,
+    "variant": "learned",
+    "representation": "28x28"
+  },
+  "status": "completed",
+  "path": "cases/mnist__runtime__43__runtime__8__learned/attempt001",
+  "started_utc": "2026-10-05T19:52:22.890794+00:00",
+  "attempt": 1,
+  "previous_attempts": [],
+  "metrics": {
+    "verification": {
+      "rotation": {
+        "status": "passed",
+        "samples_checked": 10000,
+        "max_absolute_logit_error": 0.0,
+        "atol": 1e-06,
+        "rtol": 1e-05,
+        "exit_stages_and_predictions_match_exactly": true,
+        "optimization": "cached sin/cos; adaptive reuses chosen confidence/prediction"
+      },
+      "adaptive": {
+        "status": "passed",
+        "samples_checked": 10000,
+        "max_absolute_logit_error": 0.0,
+        "atol": 1e-06,
+        "rtol": 1e-05,
+        "exit_stages_and_predictions_match_exactly": true,
+        "optimization": "cached sin/cos; adaptive reuses chosen confidence/prediction"
+      }
+    },
+    "benchmarks": {
+      "dense": {
+        "single_sample": {
+          "batch_size": 1,
+          "samples": 1000,
+          "repeats": 3,
+          "warmup_batches": 2,
+          "pass_seconds": [
+            0.15440849999140482,
+            0.15874719999555964,
+            0.1557646000001114
+          ],
+          "median_wall_seconds": 0.1557646000001114,
+          "median_ms_per_sample": 0.1557646000001114,
+          "samples_per_second": 6419.943941044916,
+          "threshold": null,
+          "execution": "normal inference",
+          "adaptive_mean_stages_on_timed_samples": null,
+          "sample_selection": "ordered test split prefix; IDs recorded in splits.json",
+          "includes": "model calls and final softmax/predictions; adaptive decisions, compaction and exit outputs",
+          "excludes": "data loading, host/device transfers, prediction export, metric aggregation",
+          "counterbalanced_orders": [
+            [
+              "original-rotation",
+              "optimized-adaptive",
+              "optimized-rotation",
+              "original-adaptive",
+              "dense"
+            ],
+            [
+              "original-rotation",
+              "dense",
+              "optimized-adaptive",
+              "original-adaptive",
+              "optimized-rotation"
+            ],
+            [
+              "original-rotation",
+              "dense",
+              "original-adaptive",
+              "optimized-adaptive",
+              "optimized-rotation"
+            ]
+          ]
+        },
+        "batched": {
+          "batch_size": 256,
+          "samples": 1000,
+          "repeats": 3,
+          "warmup_batches": 2,
+          "pass_seconds": [
+            0.006876400002511218,
+            0.006742400000803173,
+            0.0075539000099524856
+          ],
+          "median_wall_seconds": 0.006876400002511218,
+          "median_ms_per_sample": 0.006876400002511218,
+          "samples_per_second": 145424.93159717385,
+          "threshold": null,
+          "execution": "normal inference",
+          "adaptive_mean_stages_on_timed_samples": null,
+          "sample_selection": "ordered test split prefix; IDs recorded in splits.json",
+          "includes": "model calls and final softmax/predictions; adaptive decisions, compaction and exit outputs",
+          "excludes": "data loading, host/device transfers, prediction export, metric aggregation",
+          "counterbalanced_orders": [
+            [
+              "dense",
+              "original-rotation",
+              "original-adaptive",
+              "optimized-rotation",
+              "optimized-adaptive"
+            ],
+            [
+              "original-adaptive",
+              "dense",
+              "original-rotation",
+              "optimized-rotation",
+              "optimized-adaptive"
+            ],
+            [
+              "original-adaptive",
+              "original-rotation",
+              "optimized-rotation",
+              "optimized-adaptive",
+              "dense"
+            ]
+          ]
+        }
+      },
+      "original-rotation": {
+        "single_sample": {
+          "batch_size": 1,
+          "samples": 1000,
+          "repeats": 3,
+          "warmup_batches": 2,
+          "pass_seconds": [
+            1.1083941999968374,
+            1.1057803000003332,
+            1.1034418000053847
+          ],
+          "median_wall_seconds": 1.1057803000003332,
+          "median_ms_per_sample": 1.1057803000003332,
+          "samples_per_second": 904.3387732623729,
+          "threshold": null,
+          "execution": "normal inference",
+          "adaptive_mean_stages_on_timed_samples": null,
+          "sample_selection": "ordered test split prefix; IDs recorded in splits.json",
+          "includes": "model calls and final softmax/predictions; adaptive decisions, compaction and exit outputs",
+          "excludes": "data loading, host/device transfers, prediction export, metric aggregation",
+          "counterbalanced_orders": [
+            [
+              "original-rotation",
+              "optimized-adaptive",
+              "optimized-rotation",
+              "original-adaptive",
+              "dense"
+            ],
+            [
+              "original-rotation",
+              "dense",
+              "optimized-adaptive",
+              "original-adaptive",
+              "optimized-rotation"
+            ],
+            [
+              "original-rotation",
+              "dense",
+              "original-adaptive",
+              "optimized-adaptive",
+              "optimized-rotation"
+            ]
+          ]
+        },
+        "batched": {
+          "batch_size": 256,
+          "samples": 1000,
+          "repeats": 3,
+          "warmup_batches": 2,
+          "pass_seconds": [
+            0.02474860000074841,
+            0.022982400012551807,
+            0.02332770000793971
+          ],
+          "median_wall_seconds": 0.02332770000793971,
+          "median_ms_per_sample": 0.02332770000793971,
+          "samples_per_second": 42867.492279978076,
+          "threshold": null,
+          "execution": "normal inference",
+          "adaptive_mean_stages_on_timed_samples": null,
+          "sample_selection": "ordered test split prefix; IDs recorded in splits.json",
+          "includes": "model calls and final softmax/predictions; adaptive decisions, compaction and exit outputs",
+          "excludes": "data loading, host/device transfers, prediction export, metric aggregation",
+          "counterbalanced_orders": [
+            [
+              "dense",
+              "original-rotation",
+              "original-adaptive",
+              "optimized-rotation",
+              "optimized-adaptive"
+            ],
+            [
+              "original-adaptive",
+              "dense",
+              "original-rotation",
+              "optimized-rotation",
+              "optimized-adaptive"
+            ],
+            [
+              "original-adaptive",
+              "original-rotation",
+              "optimized-rotation",
+              "optimized-adaptive",
+              "dense"
+            ]
+          ]
+        }
+      },
+      "original-adaptive": {
+        "single_sample": {
+          "batch_size": 1,
+          "samples": 1000,
+          "repeats": 3,
+          "warmup_batches": 2,
+          "pass_seconds": [
+            0.5903628999949433,
+            0.5924480999965454,
+            0.5892259000102058
+          ],
+          "median_wall_seconds": 0.5903628999949433,
+          "median_ms_per_sample": 0.5903628999949433,
+          "samples_per_second": 1693.8733785753905,
+          "threshold": 0.9,
+          "execution": "normal inference",
+          "adaptive_mean_stages_on_timed_samples": 1.545,
+          "sample_selection": "ordered test split prefix; IDs recorded in splits.json",
+          "includes": "model calls and final softmax/predictions; adaptive decisions, compaction and exit outputs",
+          "excludes": "data loading, host/device transfers, prediction export, metric aggregation",
+          "counterbalanced_orders": [
+            [
+              "original-rotation",
+              "optimized-adaptive",
+              "optimized-rotation",
+              "original-adaptive",
+              "dense"
+            ],
+            [
+              "original-rotation",
+              "dense",
+              "optimized-adaptive",
+              "original-adaptive",
+              "optimized-rotation"
+            ],
+            [
+              "original-rotation",
+              "dense",
+              "original-adaptive",
+              "optimized-adaptive",
+              "optimized-rotation"
+            ]
+          ]
+        },
+        "batched": {
+          "batch_size": 256,
+          "samples": 1000,
+          "repeats": 3,
+          "warmup_batches": 2,
+          "pass_seconds": [
+            0.01838899998983834,
+            0.0188237999973353,
+            0.01785280001058709
+          ],
+          "median_wall_seconds": 0.01838899998983834,
+          "median_ms_per_sample": 0.01838899998983834,
+          "samples_per_second": 54380.336100527195,
+          "threshold": 0.9,
+          "execution": "normal inference",
+          "adaptive_mean_stages_on_timed_samples": 1.545,
+          "sample_selection": "ordered test split prefix; IDs recorded in splits.json",
+          "includes": "model calls and final softmax/predictions; adaptive decisions, compaction and exit outputs",
+          "excludes": "data loading, host/device transfers, prediction export, metric aggregation",
+          "counterbalanced_orders": [
+            [
+              "dense",
+              "original-rotation",
+              "original-adaptive",
+              "optimized-rotation",
+              "optimized-adaptive"
+            ],
+            [
+              "original-adaptive",
+              "dense",
+              "original-rotation",
+              "optimized-rotation",
+              "optimized-adaptive"
+            ],
+            [
+              "original-adaptive",
+              "original-rotation",
+              "optimized-rotation",
+              "optimized-adaptive",
+              "dense"
+            ]
+          ]
+        }
+      },
+      "optimized-rotation": {
+        "single_sample": {
+          "batch_size": 1,
+          "samples": 1000,
+          "repeats": 3,
+          "warmup_batches": 2,
+          "pass_seconds": [
+            0.941684899997199,
+            0.9432751999993343,
+            0.9444873000029474
+          ],
+          "median_wall_seconds": 0.9432751999993343,
+          "median_ms_per_sample": 0.9432751999993343,
+          "samples_per_second": 1060.136002728266,
+          "threshold": null,
+          "execution": "normal inference",
+          "adaptive_mean_stages_on_timed_samples": null,
+          "sample_selection": "ordered test split prefix; IDs recorded in splits.json",
+          "includes": "model calls and final softmax/predictions; adaptive decisions, compaction and exit outputs",
+          "excludes": "data loading, host/device transfers, prediction export, metric aggregation",
+          "counterbalanced_orders": [
+            [
+              "original-rotation",
+              "optimized-adaptive",
+              "optimized-rotation",
+              "original-adaptive",
+              "dense"
+            ],
+            [
+              "original-rotation",
+              "dense",
+              "optimized-adaptive",
+              "original-adaptive",
+              "optimized-rotation"
+            ],
+            [
+              "original-rotation",
+              "dense",
+              "original-adaptive",
+              "optimized-adaptive",
+              "optimized-rotation"
+            ]
+          ]
+        },
+        "batched": {
+          "batch_size": 256,
+          "samples": 1000,
+          "repeats": 3,
+          "warmup_batches": 2,
+          "pass_seconds": [
+            0.022602900004130788,
+            0.022780400002375245,
+            0.022672399994917214
+          ],
+          "median_wall_seconds": 0.022672399994917214,
+          "median_ms_per_sample": 0.022672399994917214,
+          "samples_per_second": 44106.49072106102,
+          "threshold": null,
+          "execution": "normal inference",
+          "adaptive_mean_stages_on_timed_samples": null,
+          "sample_selection": "ordered test split prefix; IDs recorded in splits.json",
+          "includes": "model calls and final softmax/predictions; adaptive decisions, compaction and exit outputs",
+          "excludes": "data loading, host/device transfers, prediction export, metric aggregation",
+          "counterbalanced_orders": [
+            [
+              "dense",
+              "original-rotation",
+              "original-adaptive",
+              "optimized-rotation",
+              "optimized-adaptive"
+            ],
+            [
+              "original-adaptive",
+              "dense",
+              "original-rotation",
+              "optimized-rotation",
+              "optimized-adaptive"
+            ],
+            [
+              "original-adaptive",
+              "original-rotation",
+              "optimized-rotation",
+              "optimized-adaptive",
+              "dense"
+            ]
+          ]
+        }
+      },
+      "optimized-adaptive": {
+        "single_sample": {
+          "batch_size": 1,
+          "samples": 1000,
+          "repeats": 3,
+          "warmup_batches": 2,
+          "pass_seconds": [
+            0.6061596999934409,
+            0.6118848999904003,
+            0.6091851999954088
+          ],
+          "median_wall_seconds": 0.6091851999954088,
+          "median_ms_per_sample": 0.6091851999954088,
+          "samples_per_second": 1641.5369250722715,
+          "threshold": 0.9,
+          "execution": "normal inference",
+          "adaptive_mean_stages_on_timed_samples": 1.545,
+          "sample_selection": "ordered test split prefix; IDs recorded in splits.json",
+          "includes": "model calls and final softmax/predictions; adaptive decisions, compaction and exit outputs",
+          "excludes": "data loading, host/device transfers, prediction export, metric aggregation",
+          "counterbalanced_orders": [
+            [
+              "original-rotation",
+              "optimized-adaptive",
+              "optimized-rotation",
+              "original-adaptive",
+              "dense"
+            ],
+            [
+              "original-rotation",
+              "dense",
+              "optimized-adaptive",
+              "original-adaptive",
+              "optimized-rotation"
+            ],
+            [
+              "original-rotation",
+              "dense",
+              "original-adaptive",
+              "optimized-adaptive",
+              "optimized-rotation"
+            ]
+          ]
+        },
+        "batched": {
+          "batch_size": 256,
+          "samples": 1000,
+          "repeats": 3,
+          "warmup_batches": 2,
+          "pass_seconds": [
+            0.018775199991068803,
+            0.018306600002688356,
+            0.01865880000696052
+          ],
+          "median_wall_seconds": 0.01865880000696052,
+          "median_ms_per_sample": 0.01865880000696052,
+          "samples_per_second": 53594.014600454364,
+          "threshold": 0.9,
+          "execution": "normal inference",
+          "adaptive_mean_stages_on_timed_samples": 1.545,
+          "sample_selection": "ordered test split prefix; IDs recorded in splits.json",
+          "includes": "model calls and final softmax/predictions; adaptive decisions, compaction and exit outputs",
+          "excludes": "data loading, host/device transfers, prediction export, metric aggregation",
+          "counterbalanced_orders": [
+            [
+              "dense",
+              "original-rotation",
+              "original-adaptive",
+              "optimized-rotation",
+              "optimized-adaptive"
+            ],
+            [
+              "original-adaptive",
+              "dense",
+              "original-rotation",
+              "optimized-rotation",
+              "optimized-adaptive"
+            ],
+            [
+              "original-adaptive",
+              "original-rotation",
+              "optimized-rotation",
+              "optimized-adaptive",
+              "dense"
+            ]
+          ]
+        }
+      }
+    },
+    "torch_compile": {
+      "status": "not_attempted",
+      "reason": "optional compiler path omitted; portable eager cache optimization tested"
+    },
+    "profiles": {}
+  },
+  "finished_utc": "2026-10-05T19:52:38.961840+00:00"
+}

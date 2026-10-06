@@ -1,0 +1,429 @@
+{
+  "job": {
+    "dataset": "mnist",
+    "family": "validation",
+    "seed": 45,
+    "model": "adaptive-rotation",
+    "stages": 8,
+    "variant": "learned",
+    "representation": "28x28"
+  },
+  "status": "completed",
+  "path": "cases/mnist__validation__45__adaptive-rotation__8__learned/attempt001",
+  "started_utc": "2026-10-05T19:42:30.381914+00:00",
+  "attempt": 1,
+  "previous_attempts": [],
+  "metrics": {
+    "test_accuracy": 0.963,
+    "test_samples": 10000,
+    "evaluation_wall_seconds": 1.0753675000014482,
+    "average_stages": 1,
+    "median_stages": 1.0,
+    "exit_distribution": {
+      "1": 10000,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0
+    },
+    "correct_samples": 9630,
+    "incorrect_samples": 370,
+    "average_stages_correct": 1,
+    "average_stages_incorrect": 1,
+    "confidence_by_exit_stage": [
+      {
+        "stage": 1,
+        "samples": 10000,
+        "mean_exit_confidence": 0.9613421342968941,
+        "exit_accuracy": 0.963
+      },
+      {
+        "stage": 2,
+        "samples": 0,
+        "mean_exit_confidence": null,
+        "exit_accuracy": null
+      },
+      {
+        "stage": 3,
+        "samples": 0,
+        "mean_exit_confidence": null,
+        "exit_accuracy": null
+      },
+      {
+        "stage": 4,
+        "samples": 0,
+        "mean_exit_confidence": null,
+        "exit_accuracy": null
+      },
+      {
+        "stage": 5,
+        "samples": 0,
+        "mean_exit_confidence": null,
+        "exit_accuracy": null
+      },
+      {
+        "stage": 6,
+        "samples": 0,
+        "mean_exit_confidence": null,
+        "exit_accuracy": null
+      },
+      {
+        "stage": 7,
+        "samples": 0,
+        "mean_exit_confidence": null,
+        "exit_accuracy": null
+      },
+      {
+        "stage": 8,
+        "samples": 0,
+        "mean_exit_confidence": null,
+        "exit_accuracy": null
+      }
+    ],
+    "threshold": 0.1,
+    "training_seconds": 36.176543400011724,
+    "history": [
+      {
+        "epoch": 1,
+        "loss": 0.3743610557794571,
+        "final_stage_train_accuracy": 0.8911272727272728,
+        "wall_seconds": 7.214731299987761
+      },
+      {
+        "epoch": 2,
+        "loss": 0.1617683182835579,
+        "final_stage_train_accuracy": 0.9533090909090909,
+        "wall_seconds": 7.201657900004648
+      },
+      {
+        "epoch": 3,
+        "loss": 0.11862858718958769,
+        "final_stage_train_accuracy": 0.9658363636363636,
+        "wall_seconds": 7.266739799990319
+      },
+      {
+        "epoch": 4,
+        "loss": 0.09417897976095026,
+        "final_stage_train_accuracy": 0.9715272727272727,
+        "wall_seconds": 7.23623179999413
+      },
+      {
+        "epoch": 5,
+        "loss": 0.07986491440642964,
+        "final_stage_train_accuracy": 0.9763272727272727,
+        "wall_seconds": 7.25642040000821
+      }
+    ],
+    "parameters": {
+      "trainable_parameters": 208650,
+      "total_parameters": 208650,
+      "core_trainable_parameters": 5120,
+      "core_total_parameters": 5120
+    },
+    "inference": {
+      "batched": {
+        "batch_size": 256,
+        "samples": 1000,
+        "repeats": 3,
+        "warmup_batches": 2,
+        "pass_seconds": [
+          0.007938299997476861,
+          0.006991500005824491,
+          0.007758499996270984
+        ],
+        "median_wall_seconds": 0.007758499996270984,
+        "median_ms_per_sample": 0.007758499996270984,
+        "samples_per_second": 128890.89392029853,
+        "threshold": 0.1,
+        "execution": "normal inference",
+        "adaptive_mean_stages_on_timed_samples": 1.0,
+        "sample_selection": "ordered test split prefix; IDs recorded in splits.json",
+        "includes": "model calls and final softmax/predictions; adaptive decisions, compaction and exit outputs",
+        "excludes": "data loading, host/device transfers, prediction export, metric aggregation"
+      },
+      "single_sample": {
+        "batch_size": 1,
+        "samples": 1000,
+        "repeats": 3,
+        "warmup_batches": 2,
+        "pass_seconds": [
+          0.4252466000034474,
+          0.42606850000447594,
+          0.4283050999947591
+        ],
+        "median_wall_seconds": 0.42606850000447594,
+        "median_ms_per_sample": 0.42606850000447594,
+        "samples_per_second": 2347.040440655657,
+        "threshold": 0.1,
+        "execution": "normal inference",
+        "adaptive_mean_stages_on_timed_samples": 1.0,
+        "sample_selection": "ordered test split prefix; IDs recorded in splits.json",
+        "includes": "model calls and final softmax/predictions; adaptive decisions, compaction and exit outputs",
+        "excludes": "data loading, host/device transfers, prediction export, metric aggregation"
+      }
+    },
+    "executed_train_samples": 55000,
+    "operations": {
+      "core_multiply_add_ops_per_sample": 1280,
+      "projection_multiply_add_ops_per_sample": 401408,
+      "classifier_multiply_add_ops_per_sample": 5120,
+      "whole_model_multiply_add_ops_per_sample": 407808,
+      "core_gelu_coordinates_per_sample": 256,
+      "excluded": [
+        "GELU",
+        "sin/cos",
+        "softmax",
+        "threshold decisions",
+        "memory traffic",
+        "indexing"
+      ]
+    },
+    "selection": {
+      "selected": {
+        "policy": "threshold",
+        "threshold": 0.1,
+        "validation_accuracy": 0.9668,
+        "validation_mean_stages": 1.0
+      },
+      "candidates": [
+        {
+          "policy": "threshold",
+          "threshold": 0.1,
+          "validation_accuracy": 0.9668,
+          "validation_mean_stages": 1.0
+        },
+        {
+          "policy": "threshold",
+          "threshold": 0.15,
+          "validation_accuracy": 0.9668,
+          "validation_mean_stages": 1.0
+        },
+        {
+          "policy": "threshold",
+          "threshold": 0.2,
+          "validation_accuracy": 0.9668,
+          "validation_mean_stages": 1.0
+        },
+        {
+          "policy": "threshold",
+          "threshold": 0.25,
+          "validation_accuracy": 0.9668,
+          "validation_mean_stages": 1.0
+        },
+        {
+          "policy": "threshold",
+          "threshold": 0.3,
+          "validation_accuracy": 0.9668,
+          "validation_mean_stages": 1.0
+        },
+        {
+          "policy": "threshold",
+          "threshold": 0.35,
+          "validation_accuracy": 0.9666,
+          "validation_mean_stages": 1.0012
+        },
+        {
+          "policy": "threshold",
+          "threshold": 0.4,
+          "validation_accuracy": 0.9668,
+          "validation_mean_stages": 1.0042
+        },
+        {
+          "policy": "threshold",
+          "threshold": 0.45,
+          "validation_accuracy": 0.9664,
+          "validation_mean_stages": 1.0104
+        },
+        {
+          "policy": "threshold",
+          "threshold": 0.5,
+          "validation_accuracy": 0.9668,
+          "validation_mean_stages": 1.0232
+        },
+        {
+          "policy": "threshold",
+          "threshold": 0.55,
+          "validation_accuracy": 0.9664,
+          "validation_mean_stages": 1.04
+        },
+        {
+          "policy": "threshold",
+          "threshold": 0.6,
+          "validation_accuracy": 0.9674,
+          "validation_mean_stages": 1.0676
+        },
+        {
+          "policy": "threshold",
+          "threshold": 0.65,
+          "validation_accuracy": 0.9676,
+          "validation_mean_stages": 1.1058
+        },
+        {
+          "policy": "threshold",
+          "threshold": 0.7,
+          "validation_accuracy": 0.9668,
+          "validation_mean_stages": 1.1582
+        },
+        {
+          "policy": "threshold",
+          "threshold": 0.75,
+          "validation_accuracy": 0.966,
+          "validation_mean_stages": 1.2152
+        },
+        {
+          "policy": "threshold",
+          "threshold": 0.8,
+          "validation_accuracy": 0.9658,
+          "validation_mean_stages": 1.2934
+        },
+        {
+          "policy": "threshold",
+          "threshold": 0.85,
+          "validation_accuracy": 0.9654,
+          "validation_mean_stages": 1.4012
+        },
+        {
+          "policy": "threshold",
+          "threshold": 0.9,
+          "validation_accuracy": 0.9656,
+          "validation_mean_stages": 1.5408
+        },
+        {
+          "policy": "threshold",
+          "threshold": 0.95,
+          "validation_accuracy": 0.9658,
+          "validation_mean_stages": 1.8004
+        },
+        {
+          "policy": "threshold",
+          "threshold": 0.975,
+          "validation_accuracy": 0.9658,
+          "validation_mean_stages": 2.0654
+        },
+        {
+          "policy": "threshold",
+          "threshold": 0.99,
+          "validation_accuracy": 0.9658,
+          "validation_mean_stages": 2.4774
+        },
+        {
+          "policy": "threshold",
+          "threshold": 0.995,
+          "validation_accuracy": 0.9658,
+          "validation_mean_stages": 2.833
+        },
+        {
+          "policy": "threshold",
+          "threshold": 0.999,
+          "validation_accuracy": 0.9658,
+          "validation_mean_stages": 3.8228
+        },
+        {
+          "policy": "threshold",
+          "threshold": 1.0,
+          "validation_accuracy": 0.9658,
+          "validation_mean_stages": 7.9278
+        },
+        {
+          "policy": "full-depth",
+          "threshold": null,
+          "validation_accuracy": 0.9658,
+          "validation_mean_stages": 8
+        }
+      ],
+      "full_depth_validation_accuracy": 0.9658,
+      "tolerance_percentage_points": 0.1,
+      "objective": "minimum validation mean stages subject to accuracy >= full depth - tolerance",
+      "selection_split": "validation",
+      "threshold_frozen_before_test": true
+    },
+    "stage_analysis": {
+      "samples": 10000,
+      "accuracy_by_stage": [
+        0.963,
+        0.9661,
+        0.9657,
+        0.9664,
+        0.9669,
+        0.9662,
+        0.9658,
+        0.9653
+      ],
+      "stage1_correct": 9630,
+      "stage1_errors": 370,
+      "stage1_errors_correct_at_final": 104,
+      "stage1_errors_ever_corrected": 147,
+      "stage1_correct_wrong_at_final": 81,
+      "stage1_correct_ever_broken": 143,
+      "transitions": [
+        {
+          "from_stage": 1,
+          "to_stage": 2,
+          "rescued": 59,
+          "damaged": 28,
+          "incorrect_to_incorrect": 311,
+          "correct_to_correct": 9602,
+          "changed_prediction": 97
+        },
+        {
+          "from_stage": 2,
+          "to_stage": 3,
+          "rescued": 38,
+          "damaged": 42,
+          "incorrect_to_incorrect": 301,
+          "correct_to_correct": 9619,
+          "changed_prediction": 89
+        },
+        {
+          "from_stage": 3,
+          "to_stage": 4,
+          "rescued": 46,
+          "damaged": 39,
+          "incorrect_to_incorrect": 297,
+          "correct_to_correct": 9618,
+          "changed_prediction": 95
+        },
+        {
+          "from_stage": 4,
+          "to_stage": 5,
+          "rescued": 46,
+          "damaged": 41,
+          "incorrect_to_incorrect": 290,
+          "correct_to_correct": 9623,
+          "changed_prediction": 100
+        },
+        {
+          "from_stage": 5,
+          "to_stage": 6,
+          "rescued": 29,
+          "damaged": 36,
+          "incorrect_to_incorrect": 302,
+          "correct_to_correct": 9633,
+          "changed_prediction": 75
+        },
+        {
+          "from_stage": 6,
+          "to_stage": 7,
+          "rescued": 27,
+          "damaged": 31,
+          "incorrect_to_incorrect": 311,
+          "correct_to_correct": 9631,
+          "changed_prediction": 69
+        },
+        {
+          "from_stage": 7,
+          "to_stage": 8,
+          "rescued": 37,
+          "damaged": 42,
+          "incorrect_to_incorrect": 305,
+          "correct_to_correct": 9616,
+          "changed_prediction": 86
+        }
+      ]
+    }
+  },
+  "finished_utc": "2026-10-05T19:43:10.430834+00:00"
+}

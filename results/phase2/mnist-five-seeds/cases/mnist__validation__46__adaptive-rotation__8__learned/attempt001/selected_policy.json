@@ -1,0 +1,159 @@
+{
+  "selected": {
+    "policy": "threshold",
+    "threshold": 0.6,
+    "validation_accuracy": 0.9714,
+    "validation_mean_stages": 1.0686
+  },
+  "candidates": [
+    {
+      "policy": "threshold",
+      "threshold": 0.1,
+      "validation_accuracy": 0.9688,
+      "validation_mean_stages": 1.0
+    },
+    {
+      "policy": "threshold",
+      "threshold": 0.15,
+      "validation_accuracy": 0.9688,
+      "validation_mean_stages": 1.0
+    },
+    {
+      "policy": "threshold",
+      "threshold": 0.2,
+      "validation_accuracy": 0.9688,
+      "validation_mean_stages": 1.0
+    },
+    {
+      "policy": "threshold",
+      "threshold": 0.25,
+      "validation_accuracy": 0.9688,
+      "validation_mean_stages": 1.0
+    },
+    {
+      "policy": "threshold",
+      "threshold": 0.3,
+      "validation_accuracy": 0.9688,
+      "validation_mean_stages": 1.0
+    },
+    {
+      "policy": "threshold",
+      "threshold": 0.35,
+      "validation_accuracy": 0.9686,
+      "validation_mean_stages": 1.0008
+    },
+    {
+      "policy": "threshold",
+      "threshold": 0.4,
+      "validation_accuracy": 0.9684,
+      "validation_mean_stages": 1.0036
+    },
+    {
+      "policy": "threshold",
+      "threshold": 0.45,
+      "validation_accuracy": 0.9682,
+      "validation_mean_stages": 1.0112
+    },
+    {
+      "policy": "threshold",
+      "threshold": 0.5,
+      "validation_accuracy": 0.9682,
+      "validation_mean_stages": 1.0204
+    },
+    {
+      "policy": "threshold",
+      "threshold": 0.55,
+      "validation_accuracy": 0.9692,
+      "validation_mean_stages": 1.0424
+    },
+    {
+      "policy": "threshold",
+      "threshold": 0.6,
+      "validation_accuracy": 0.9714,
+      "validation_mean_stages": 1.0686
+    },
+    {
+      "policy": "threshold",
+      "threshold": 0.65,
+      "validation_accuracy": 0.9714,
+      "validation_mean_stages": 1.102
+    },
+    {
+      "policy": "threshold",
+      "threshold": 0.7,
+      "validation_accuracy": 0.9722,
+      "validation_mean_stages": 1.1506
+    },
+    {
+      "policy": "threshold",
+      "threshold": 0.75,
+      "validation_accuracy": 0.972,
+      "validation_mean_stages": 1.2072
+    },
+    {
+      "policy": "threshold",
+      "threshold": 0.8,
+      "validation_accuracy": 0.9718,
+      "validation_mean_stages": 1.273
+    },
+    {
+      "policy": "threshold",
+      "threshold": 0.85,
+      "validation_accuracy": 0.9724,
+      "validation_mean_stages": 1.361
+    },
+    {
+      "policy": "threshold",
+      "threshold": 0.9,
+      "validation_accuracy": 0.9726,
+      "validation_mean_stages": 1.4694
+    },
+    {
+      "policy": "threshold",
+      "threshold": 0.95,
+      "validation_accuracy": 0.9724,
+      "validation_mean_stages": 1.6988
+    },
+    {
+      "policy": "threshold",
+      "threshold": 0.975,
+      "validation_accuracy": 0.9724,
+      "validation_mean_stages": 1.9582
+    },
+    {
+      "policy": "threshold",
+      "threshold": 0.99,
+      "validation_accuracy": 0.9724,
+      "validation_mean_stages": 2.4112
+    },
+    {
+      "policy": "threshold",
+      "threshold": 0.995,
+      "validation_accuracy": 0.9724,
+      "validation_mean_stages": 2.8202
+    },
+    {
+      "policy": "threshold",
+      "threshold": 0.999,
+      "validation_accuracy": 0.9724,
+      "validation_mean_stages": 4.0328
+    },
+    {
+      "policy": "threshold",
+      "threshold": 1.0,
+      "validation_accuracy": 0.9724,
+      "validation_mean_stages": 7.9302
+    },
+    {
+      "policy": "full-depth",
+      "threshold": null,
+      "validation_accuracy": 0.9724,
+      "validation_mean_stages": 8
+    }
+  ],
+  "full_depth_validation_accuracy": 0.9724,
+  "tolerance_percentage_points": 0.1,
+  "objective": "minimum validation mean stages subject to accuracy >= full depth - tolerance",
+  "selection_split": "validation",
+  "threshold_frozen_before_test": true
+}

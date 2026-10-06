@@ -1,0 +1,23 @@
+{
+  "pyproject.toml": "d7557ce46e57c6dd02fa6030fbc28e2970a072980357f755d50d1d110badcc59",
+  "requirements.txt": "2bcd7cf2e3e8e2f8fab090377854d6590b9dd8a9bc4cf782f0d08cfd44c9c7b4",
+  "rotnet/__init__.py": "6d16b0c71818527f8237b4c6a4ae7a2d81c582af6118cfe563aaebb2c22da361",
+  "rotnet/data.py": "96bc41d20ed71f24283be7860073c2df5aa376b52ddef2d0463666b6e99caeee",
+  "rotnet/evaluate.py": "1af394342d7d99bb36665aa260c358eb6f1e569b1cffe6789fd803c1cf58da47",
+  "rotnet/experiment.py": "fd4f67d1d79164a51152a9c7ad191817aed2e82670c9845fe4f696a3cba28a93",
+  "rotnet/metrics.py": "09d66ab6add56f70b76bf443217263d2988dd9e4ee8c33647f0e81969c4680dc",
+  "rotnet/models/__init__.py": "e88879335d1478679c95732b6f1ce3c430856d6b7cd5c3d9f2f1a7444a622bd4",
+  "rotnet/models/adaptive_rotation.py": "3890a3ce28c54dc5b299272257055f15ba2abb57aff7d1c7babf699a96fce9b9",
+  "rotnet/models/common.py": "c2a7b9d23389aa04c0747c48979c3edaae230cb440d218176358548e7766dc60",
+  "rotnet/models/dense.py": "67997673652062b904244480dc3459d51c5fb9a841533b8b9797a5805367ff10",
+  "rotnet/models/low_rank.py": "df80a590330d968909069e05565477f10153cefa7c412c7ab0e2dfb1669976db",
+  "rotnet/models/rotation.py": "cd9f9779ac5955dbd4e7538981a78d50bc06caae6a55bb8af29d706f2ea1fcdb",
+  "rotnet/plots.py": "f75a70fdc2248711099ea6e0d2a51052f95aae2ec39c82d14ae68bf5ece8ff51",
+  "rotnet/reporting.py": "bbd966276adde61e6217b344d12bd8681c9f7ecbe9e022eeb8f9c4b2aba2b847",
+  "rotnet/train.py": "d7fd5e5e14d27be15ae89ffc11d798d69de5d66e56da4f54dbec56d603aaaa5c",
+  "scripts/run_experiment.py": "53fa1eace83bd07756b68ce25cc0c55ded19589ba9651f3a752a2c10fb71279f",
+  "tests/test_adaptive.py": "2d97058b475f533faf8c0183f25db757194cc95c66855b6150268ecd920e8653",
+  "tests/test_infrastructure.py": "79331b41dd175df5eb6fe9b89b50284fdb10971a82f7d8a3e519cb58e59d8221",
+  "tests/test_metrics_and_pipeline.py": "4682cb33769d61137029130fd248e7981a26e1e8cfb590ded6fb7a781456ebbd",
+  "tests/test_rotation.py": "1f1ab3ac1e11437b5ccc07695648d5be04c007cf7f9c6a7a5398b37defa3e0a9"
+}

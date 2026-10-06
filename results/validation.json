@@ -1,0 +1,48 @@
+{
+  "status": "partial-validation",
+  "interpreter": "C:\\Python312\\python.exe",
+  "selected_environment": "C:\\srdev\\work\\research\\RotNet\\.venv\\Scripts\\python.exe",
+  "dependency_install": {
+    "status": "blocked",
+    "reason": "Network socket access denied (WinError 10013); no cached packages or nearby PyTorch environments found."
+  },
+  "infrastructure_tests": {
+    "status": "passed",
+    "tests_run": 8,
+    "command": ".\\.venv\\Scripts\\python.exe -m unittest discover -s tests -p test_infrastructure.py -v",
+    "chunk_id": "a35348",
+    "wall_time_seconds": 0.6677851,
+    "exit_code": 0,
+    "original_token_count": 297,
+    "output": "test_cli_defaults_and_fashion_flag (test_infrastructure.InfrastructureTests.test_cli_defaults_and_fashion_flag) ... ok\r\ntest_dependency_failure_records_pending_run_and_nonzero_status (test_infrastructure.InfrastructureTests.test_dependency_failure_records_pending_run_and_nonzero_status) ... ok\r\ntest_hashes_cover_models_and_tests (test_infrastructure.InfrastructureTests.test_hashes_cover_models_and_tests) ... ok\r\ntest_json_and_prediction_schema_round_trip (test_infrastructure.InfrastructureTests.test_json_and_prediction_schema_round_trip) ... ok\r\ntest_pending_report_has_no_fake_accuracy (test_infrastructure.InfrastructureTests.test_pending_report_has_no_fake_accuracy) ... ok\r\ntest_report_written_to_run_and_summary (test_infrastructure.InfrastructureTests.test_report_written_to_run_and_summary) ... ok\r\ntest_run_directory_is_never_overwritten (test_infrastructure.InfrastructureTests.test_run_directory_is_never_overwritten) ... ok\r\ntest_run_name_cannot_escape_results_directory (test_infrastructure.InfrastructureTests.test_run_name_cannot_escape_results_directory) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 8 tests in 0.300s\r\n\r\nOK\r\n"
+  },
+  "syntax_and_artifact_checks": {
+    "status": "passed",
+    "python_files_parsed": 19,
+    "chunk_id": "607013",
+    "wall_time_seconds": 0.1121499,
+    "exit_code": 0,
+    "original_token_count": 77,
+    "output": "Parsed 19 Python files successfully.\r\nTest modules: test_adaptive.py, test_infrastructure.py, test_metrics_and_pipeline.py, test_rotation.py\r\nattempt-smoke-mnist status= blocked completed_models= [] prediction_rows= 0\r\nattempt-mnist-seed42-5epochs status= blocked completed_models= [] prediction_rows= 0\r\n"
+  },
+  "full_pytest": {
+    "status": "blocked",
+    "reason": "No module named pytest",
+    "chunk_id": "bd09d3",
+    "wall_time_seconds": 0.0049226,
+    "exit_code": 1,
+    "original_token_count": 20,
+    "output": "C:\\srdev\\work\\research\\RotNet\\.venv\\Scripts\\python.exe: No module named pytest\r\n"
+  },
+  "real_mnist_smoke": {
+    "status": "blocked-before-training",
+    "run_directory": "attempt-smoke-mnist"
+  },
+  "five_epoch_mnist": {
+    "status": "blocked-before-training",
+    "run_directory": "attempt-mnist-seed42-5epochs"
+  },
+  "numerical_model_tests": "pending; torch unavailable",
+  "training_epochs_executed": 0,
+  "generated_research_plots": 0
+}

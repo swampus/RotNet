@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "tests_passed": 98,
+  "original_tests_passed": 53,
+  "new_tests_passed": 45,
+  "command": ".\\.venv\\Scripts\\python.exe -m pytest -q -p no:cacheprovider --basetemp .phase2-tests-postprocess --junitxml results\\phase2\\mnist-five-seeds\\final-test-results.xml",
+  "evidence": "final-test-results.xml",
+  "python_files_syntax_checked": 32,
+  "completed_mnist_cases": 95,
+  "completed_training_runs": 90,
+  "full_epochs_completed": 450,
+  "blocked_fashion_cases": 95,
+  "split_and_stage_accounting_audit": "passed",
+  "full_test_equivalence_audit": "passed"
+}

@@ -1,0 +1,17 @@
+{
+  "job": {
+    "dataset": "mnist",
+    "family": "replication",
+    "seed": 45,
+    "model": "adaptive-rotation",
+    "stages": 8,
+    "variant": "learned",
+    "representation": "28x28"
+  },
+  "status": "interrupted",
+  "path": "cases/mnist__replication__45__adaptive-rotation__8__learned/attempt001",
+  "started_utc": "2026-10-05T19:15:20.336397+00:00",
+  "attempt": 1,
+  "error": "Daemon restart terminated the worker; no Python worker remained. Partial attempt preserved; restart required.",
+  "finished_utc": "2026-10-05T19:17:06.632592+00:00"
+}

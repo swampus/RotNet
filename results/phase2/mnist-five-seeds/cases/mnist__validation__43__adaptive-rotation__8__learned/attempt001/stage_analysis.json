@@ -1,0 +1,84 @@
+{
+  "samples": 10000,
+  "accuracy_by_stage": [
+    0.9715,
+    0.9725,
+    0.9711,
+    0.972,
+    0.973,
+    0.9718,
+    0.9716,
+    0.9705
+  ],
+  "stage1_correct": 9715,
+  "stage1_errors": 285,
+  "stage1_errors_correct_at_final": 76,
+  "stage1_errors_ever_corrected": 110,
+  "stage1_correct_wrong_at_final": 86,
+  "stage1_correct_ever_broken": 142,
+  "transitions": [
+    {
+      "from_stage": 1,
+      "to_stage": 2,
+      "rescued": 43,
+      "damaged": 33,
+      "incorrect_to_incorrect": 242,
+      "correct_to_correct": 9682,
+      "changed_prediction": 87
+    },
+    {
+      "from_stage": 2,
+      "to_stage": 3,
+      "rescued": 22,
+      "damaged": 36,
+      "incorrect_to_incorrect": 253,
+      "correct_to_correct": 9689,
+      "changed_prediction": 69
+    },
+    {
+      "from_stage": 3,
+      "to_stage": 4,
+      "rescued": 34,
+      "damaged": 25,
+      "incorrect_to_incorrect": 255,
+      "correct_to_correct": 9686,
+      "changed_prediction": 73
+    },
+    {
+      "from_stage": 4,
+      "to_stage": 5,
+      "rescued": 32,
+      "damaged": 22,
+      "incorrect_to_incorrect": 248,
+      "correct_to_correct": 9698,
+      "changed_prediction": 60
+    },
+    {
+      "from_stage": 5,
+      "to_stage": 6,
+      "rescued": 30,
+      "damaged": 42,
+      "incorrect_to_incorrect": 240,
+      "correct_to_correct": 9688,
+      "changed_prediction": 83
+    },
+    {
+      "from_stage": 6,
+      "to_stage": 7,
+      "rescued": 37,
+      "damaged": 39,
+      "incorrect_to_incorrect": 245,
+      "correct_to_correct": 9679,
+      "changed_prediction": 82
+    },
+    {
+      "from_stage": 7,
+      "to_stage": 8,
+      "rescued": 30,
+      "damaged": 41,
+      "incorrect_to_incorrect": 254,
+      "correct_to_correct": 9675,
+      "changed_prediction": 84
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "dataset": "mnist",
+  "family": "validation",
+  "seed": 43,
+  "model": "adaptive-rotation",
+  "stages": 8,
+  "variant": "learned",
+  "representation": "28x28"
+}

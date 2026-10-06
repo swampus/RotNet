@@ -1,0 +1,496 @@
+{
+  "mnist/replication": {
+    "adaptive-rotation": {
+      "seeds": [
+        42
+      ],
+      "accuracy": {
+        "n": 1,
+        "mean": 0.234375,
+        "std": null,
+        "min": 0.234375,
+        "max": 0.234375
+      },
+      "training_seconds": {
+        "n": 1,
+        "mean": 0.009229400006006472,
+        "std": null,
+        "min": 0.009229400006006472,
+        "max": 0.009229400006006472
+      },
+      "core_ops": {
+        "n": 1,
+        "mean": 10240,
+        "std": null,
+        "min": 10240,
+        "max": 10240
+      },
+      "whole_ops": {
+        "n": 1,
+        "mean": 452608,
+        "std": null,
+        "min": 452608,
+        "max": 452608
+      },
+      "core_parameters": {
+        "n": 1,
+        "mean": 5120,
+        "std": null,
+        "min": 5120,
+        "max": 5120
+      },
+      "core_total_parameters": {
+        "n": 1,
+        "mean": 5120,
+        "std": null,
+        "min": 5120,
+        "max": 5120
+      },
+      "batched_ms": {
+        "n": 1,
+        "mean": 0.06581875004485482,
+        "std": null,
+        "min": 0.06581875004485482,
+        "max": 0.06581875004485482
+      },
+      "single_ms": {
+        "n": 1,
+        "mean": 0.775025000621099,
+        "std": null,
+        "min": 0.775025000621099,
+        "max": 0.775025000621099
+      }
+    },
+    "dense": {
+      "seeds": [
+        42
+      ],
+      "accuracy": {
+        "n": 1,
+        "mean": 0.203125,
+        "std": null,
+        "min": 0.203125,
+        "max": 0.203125
+      },
+      "training_seconds": {
+        "n": 1,
+        "mean": 0.005403099989052862,
+        "std": null,
+        "min": 0.005403099989052862,
+        "max": 0.005403099989052862
+      },
+      "core_ops": {
+        "n": 1,
+        "mean": 131072,
+        "std": null,
+        "min": 131072,
+        "max": 131072
+      },
+      "whole_ops": {
+        "n": 1,
+        "mean": 537600,
+        "std": null,
+        "min": 537600,
+        "max": 537600
+      },
+      "core_parameters": {
+        "n": 1,
+        "mean": 65792,
+        "std": null,
+        "min": 65792,
+        "max": 65792
+      },
+      "core_total_parameters": {
+        "n": 1,
+        "mean": 65792,
+        "std": null,
+        "min": 65792,
+        "max": 65792
+      },
+      "batched_ms": {
+        "n": 1,
+        "mean": 0.00670000008540228,
+        "std": null,
+        "min": 0.00670000008540228,
+        "max": 0.00670000008540228
+      },
+      "single_ms": {
+        "n": 1,
+        "mean": 0.061312501202337444,
+        "std": null,
+        "min": 0.061312501202337444,
+        "max": 0.061312501202337444
+      }
+    },
+    "low-rank": {
+      "seeds": [
+        42
+      ],
+      "accuracy": {
+        "n": 1,
+        "mean": 0.203125,
+        "std": null,
+        "min": 0.203125,
+        "max": 0.203125
+      },
+      "training_seconds": {
+        "n": 1,
+        "mean": 0.0027677000034600496,
+        "std": null,
+        "min": 0.0027677000034600496,
+        "max": 0.0027677000034600496
+      },
+      "core_ops": {
+        "n": 1,
+        "mean": 32736,
+        "std": null,
+        "min": 32736,
+        "max": 32736
+      },
+      "whole_ops": {
+        "n": 1,
+        "mean": 439264,
+        "std": null,
+        "min": 439264,
+        "max": 439264
+      },
+      "core_parameters": {
+        "n": 1,
+        "mean": 16640,
+        "std": null,
+        "min": 16640,
+        "max": 16640
+      },
+      "core_total_parameters": {
+        "n": 1,
+        "mean": 16640,
+        "std": null,
+        "min": 16640,
+        "max": 16640
+      },
+      "batched_ms": {
+        "n": 1,
+        "mean": 0.005981250069453381,
+        "std": null,
+        "min": 0.005981250069453381,
+        "max": 0.005981250069453381
+      },
+      "single_ms": {
+        "n": 1,
+        "mean": 0.04713749876827933,
+        "std": null,
+        "min": 0.04713749876827933,
+        "max": 0.04713749876827933
+      }
+    },
+    "rotation": {
+      "seeds": [
+        42
+      ],
+      "accuracy": {
+        "n": 1,
+        "mean": 0.21875,
+        "std": null,
+        "min": 0.21875,
+        "max": 0.21875
+      },
+      "training_seconds": {
+        "n": 1,
+        "mean": 0.008994400006486103,
+        "std": null,
+        "min": 0.008994400006486103,
+        "max": 0.008994400006486103
+      },
+      "core_ops": {
+        "n": 1,
+        "mean": 10240,
+        "std": null,
+        "min": 10240,
+        "max": 10240
+      },
+      "whole_ops": {
+        "n": 1,
+        "mean": 416768,
+        "std": null,
+        "min": 416768,
+        "max": 416768
+      },
+      "core_parameters": {
+        "n": 1,
+        "mean": 5120,
+        "std": null,
+        "min": 5120,
+        "max": 5120
+      },
+      "core_total_parameters": {
+        "n": 1,
+        "mean": 5120,
+        "std": null,
+        "min": 5120,
+        "max": 5120
+      },
+      "batched_ms": {
+        "n": 1,
+        "mean": 0.030649999644083437,
+        "std": null,
+        "min": 0.030649999644083437,
+        "max": 0.030649999644083437
+      },
+      "single_ms": {
+        "n": 1,
+        "mean": 0.327287500113016,
+        "std": null,
+        "min": 0.327287500113016,
+        "max": 0.327287500113016
+      }
+    }
+  },
+  "mnist/direct16": {
+    "adaptive-rotation": {
+      "seeds": [
+        42
+      ],
+      "accuracy": {
+        "n": 1,
+        "mean": 0.046875,
+        "std": null,
+        "min": 0.046875,
+        "max": 0.046875
+      },
+      "training_seconds": {
+        "n": 1,
+        "mean": 0.015822300003492273,
+        "std": null,
+        "min": 0.015822300003492273,
+        "max": 0.015822300003492273
+      },
+      "core_ops": {
+        "n": 1,
+        "mean": 10240,
+        "std": null,
+        "min": 10240,
+        "max": 10240
+      },
+      "whole_ops": {
+        "n": 1,
+        "mean": 51200,
+        "std": null,
+        "min": 51200,
+        "max": 51200
+      },
+      "core_parameters": {
+        "n": 1,
+        "mean": 5120,
+        "std": null,
+        "min": 5120,
+        "max": 5120
+      },
+      "core_total_parameters": {
+        "n": 1,
+        "mean": 5120,
+        "std": null,
+        "min": 5120,
+        "max": 5120
+      },
+      "batched_ms": {
+        "n": 1,
+        "mean": 0.2070874998025829,
+        "std": null,
+        "min": 0.2070874998025829,
+        "max": 0.2070874998025829
+      },
+      "single_ms": {
+        "n": 1,
+        "mean": 2.4893125009839423,
+        "std": null,
+        "min": 2.4893125009839423,
+        "max": 2.4893125009839423
+      }
+    },
+    "dense": {
+      "seeds": [
+        42
+      ],
+      "accuracy": {
+        "n": 1,
+        "mean": 0.265625,
+        "std": null,
+        "min": 0.265625,
+        "max": 0.265625
+      },
+      "training_seconds": {
+        "n": 1,
+        "mean": 0.0036128999927314,
+        "std": null,
+        "min": 0.0036128999927314,
+        "max": 0.0036128999927314
+      },
+      "core_ops": {
+        "n": 1,
+        "mean": 131072,
+        "std": null,
+        "min": 131072,
+        "max": 131072
+      },
+      "whole_ops": {
+        "n": 1,
+        "mean": 136192,
+        "std": null,
+        "min": 136192,
+        "max": 136192
+      },
+      "core_parameters": {
+        "n": 1,
+        "mean": 65792,
+        "std": null,
+        "min": 65792,
+        "max": 65792
+      },
+      "core_total_parameters": {
+        "n": 1,
+        "mean": 65792,
+        "std": null,
+        "min": 65792,
+        "max": 65792
+      },
+      "batched_ms": {
+        "n": 1,
+        "mean": 0.00963749971560901,
+        "std": null,
+        "min": 0.00963749971560901,
+        "max": 0.00963749971560901
+      },
+      "single_ms": {
+        "n": 1,
+        "mean": 0.09737499931361526,
+        "std": null,
+        "min": 0.09737499931361526,
+        "max": 0.09737499931361526
+      }
+    },
+    "low-rank": {
+      "seeds": [
+        42
+      ],
+      "accuracy": {
+        "n": 1,
+        "mean": 0.234375,
+        "std": null,
+        "min": 0.234375,
+        "max": 0.234375
+      },
+      "training_seconds": {
+        "n": 1,
+        "mean": 0.003528000001097098,
+        "std": null,
+        "min": 0.003528000001097098,
+        "max": 0.003528000001097098
+      },
+      "core_ops": {
+        "n": 1,
+        "mean": 32736,
+        "std": null,
+        "min": 32736,
+        "max": 32736
+      },
+      "whole_ops": {
+        "n": 1,
+        "mean": 37856,
+        "std": null,
+        "min": 37856,
+        "max": 37856
+      },
+      "core_parameters": {
+        "n": 1,
+        "mean": 16640,
+        "std": null,
+        "min": 16640,
+        "max": 16640
+      },
+      "core_total_parameters": {
+        "n": 1,
+        "mean": 16640,
+        "std": null,
+        "min": 16640,
+        "max": 16640
+      },
+      "batched_ms": {
+        "n": 1,
+        "mean": 0.009893749847833533,
+        "std": null,
+        "min": 0.009893749847833533,
+        "max": 0.009893749847833533
+      },
+      "single_ms": {
+        "n": 1,
+        "mean": 0.1868250001280103,
+        "std": null,
+        "min": 0.1868250001280103,
+        "max": 0.1868250001280103
+      }
+    },
+    "rotation": {
+      "seeds": [
+        42
+      ],
+      "accuracy": {
+        "n": 1,
+        "mean": 0.046875,
+        "std": null,
+        "min": 0.046875,
+        "max": 0.046875
+      },
+      "training_seconds": {
+        "n": 1,
+        "mean": 0.01326110000081826,
+        "std": null,
+        "min": 0.01326110000081826,
+        "max": 0.01326110000081826
+      },
+      "core_ops": {
+        "n": 1,
+        "mean": 10240,
+        "std": null,
+        "min": 10240,
+        "max": 10240
+      },
+      "whole_ops": {
+        "n": 1,
+        "mean": 15360,
+        "std": null,
+        "min": 15360,
+        "max": 15360
+      },
+      "core_parameters": {
+        "n": 1,
+        "mean": 5120,
+        "std": null,
+        "min": 5120,
+        "max": 5120
+      },
+      "core_total_parameters": {
+        "n": 1,
+        "mean": 5120,
+        "std": null,
+        "min": 5120,
+        "max": 5120
+      },
+      "batched_ms": {
+        "n": 1,
+        "mean": 0.074487499659881,
+        "std": null,
+        "min": 0.074487499659881,
+        "max": 0.074487499659881
+      },
+      "single_ms": {
+        "n": 1,
+        "mean": 1.0106124991580145,
+        "std": null,
+        "min": 1.0106124991580145,
+        "max": 1.0106124991580145
+      }
+    }
+  },
+  "fashion-mnist/replication": {},
+  "fashion-mnist/direct16": {}
+}

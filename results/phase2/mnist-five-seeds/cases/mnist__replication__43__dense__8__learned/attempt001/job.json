@@ -1,0 +1,9 @@
+{
+  "dataset": "mnist",
+  "family": "replication",
+  "seed": 43,
+  "model": "dense",
+  "stages": 8,
+  "variant": "learned",
+  "representation": "28x28"
+}

@@ -1,0 +1,9 @@
+{
+  "dataset": "mnist",
+  "family": "stages",
+  "seed": 44,
+  "model": "rotation",
+  "stages": 1,
+  "variant": "learned",
+  "representation": "28x28"
+}

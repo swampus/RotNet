@@ -1,0 +1,90 @@
+{
+  "job": {
+    "dataset": "mnist",
+    "family": "direct16",
+    "seed": 42,
+    "model": "dense",
+    "stages": 8,
+    "variant": "learned",
+    "representation": "16x16"
+  },
+  "status": "completed",
+  "path": "cases/mnist__direct16__42__dense__8__learned/attempt001",
+  "started_utc": "2026-10-05T19:08:06.010970+00:00",
+  "attempt": 1,
+  "metrics": {
+    "test_accuracy": 0.265625,
+    "test_samples": 64,
+    "evaluation_wall_seconds": 0.007113999992725439,
+    "training_seconds": 0.0036128999927314,
+    "history": [
+      {
+        "epoch": 1,
+        "loss": 2.2946722507476807,
+        "final_stage_train_accuracy": 0.0859375,
+        "wall_seconds": 0.0035494000039761886
+      }
+    ],
+    "parameters": {
+      "trainable_parameters": 68362,
+      "total_parameters": 68362,
+      "core_trainable_parameters": 65792,
+      "core_total_parameters": 65792
+    },
+    "inference": {
+      "batched": {
+        "batch_size": 256,
+        "samples": 16,
+        "repeats": 1,
+        "warmup_batches": 2,
+        "pass_seconds": [
+          0.00015419999544974416
+        ],
+        "median_wall_seconds": 0.00015419999544974416,
+        "median_ms_per_sample": 0.00963749971560901,
+        "samples_per_second": 103761.3519594079,
+        "threshold": null,
+        "execution": "normal inference",
+        "adaptive_mean_stages_on_timed_samples": null,
+        "sample_selection": "ordered test split prefix; IDs recorded in splits.json",
+        "includes": "model calls and final softmax/predictions; adaptive decisions, compaction and exit outputs",
+        "excludes": "data loading, host/device transfers, prediction export, metric aggregation"
+      },
+      "single_sample": {
+        "batch_size": 1,
+        "samples": 8,
+        "repeats": 1,
+        "warmup_batches": 2,
+        "pass_seconds": [
+          0.0007789999945089221
+        ],
+        "median_wall_seconds": 0.0007789999945089221,
+        "median_ms_per_sample": 0.09737499931361526,
+        "samples_per_second": 10269.576452363342,
+        "threshold": null,
+        "execution": "normal inference",
+        "adaptive_mean_stages_on_timed_samples": null,
+        "sample_selection": "ordered test split prefix; IDs recorded in splits.json",
+        "includes": "model calls and final softmax/predictions; adaptive decisions, compaction and exit outputs",
+        "excludes": "data loading, host/device transfers, prediction export, metric aggregation"
+      }
+    },
+    "executed_train_samples": 128,
+    "operations": {
+      "core_multiply_add_ops_per_sample": 131072,
+      "projection_multiply_add_ops_per_sample": 0,
+      "classifier_multiply_add_ops_per_sample": 5120,
+      "whole_model_multiply_add_ops_per_sample": 136192,
+      "core_gelu_coordinates_per_sample": 256,
+      "excluded": [
+        "GELU",
+        "sin/cos",
+        "softmax",
+        "threshold decisions",
+        "memory traffic",
+        "indexing"
+      ]
+    }
+  },
+  "finished_utc": "2026-10-05T19:08:06.034151+00:00"
+}
